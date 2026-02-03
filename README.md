@@ -16,8 +16,28 @@ It provides user authentication, a dashboard to send test emails, and a page to 
 - View sent emails with timestamps and recipients
 - Responsive and modern UI
 
----
+-----------------------------------------------------------------------------------
 
+✨ Additional Enhancements (Beyond Core Requirements)
+--------------------------------------------------------------------
+To improve user experience and usability, the following extra enhancements were implemented:
+
+🔄 Loading State on Email Send
+The “Send Email” button changes to “Sending…” while the request is processing to prevent duplicate submissions.
+
+✅ Success Feedback Message
+After sending an email, a clear success message (Email sent successfully) with preview link is displayed.
+
+🔐 Protected Navigation Handling
+Users are automatically redirected based on authentication state to ensure secure access.
+
+🚪 Logout Handling
+Secure logout functionality clears JWT token and redirects user to login page.
+
+🎯 Improved UX Flow
+Form validation, disabled states during API calls, and smoother interaction feedback were added to enhance usability.
+
+------------------------------------------------------------------------
 ## 🛠 Tech Stack
 
 - **React**
@@ -89,9 +109,11 @@ npm run dev
 Make sure the backend server is running on
 http://localhost:3000
 
+------------------------------------------------------------------------------
 
 Status
 All core features implemented according to the save backend project(node+ hono)
-Authentication and protected routing working correctly
+Authentication, protected routing, and email flow fully functional
 Email sending and preview functioning as expected
 UI fully styled with Tailwind CSS
+

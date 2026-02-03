@@ -14,7 +14,7 @@ export default function Dashboard() {
 
   function logout() {
     localStorage.removeItem('token');
-    navigate('/login'); // ✅ clean redirect
+    navigate('/login'); //  clean redirect
   }
 
   async function submit(e: React.FormEvent) {
@@ -85,7 +85,7 @@ export default function Dashboard() {
 
           {previewUrl && (
             <p className="mt-4 text-sm text-green-600 text-center">
-              Email sent!{' '}
+              ✅ Email sent successfully {' '}
               <a
                 href={previewUrl}
                 target="_blank"
