@@ -75,6 +75,10 @@ export default function Dashboard() {
             >
               {loading ? 'Sending...' : 'Send Email'}
             </button>
+            <button type="button" onClick={logout}>
+              Logout
+            </button>
+
           </form>
 
           {error && (
